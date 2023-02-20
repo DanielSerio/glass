@@ -14,6 +14,16 @@ declare global {
 			| 'green'
 			| 'yellow'
 			| 'orange';
+
+		interface ToastItemParams {
+			mode?: 'success' | 'warning' | 'danger' | 'default';
+			message: string;
+		}
+
+		interface ToastStoreItem extends ToastItemParams {
+			mode: 'success' | 'warning' | 'danger' | 'default';
+			timestamp: Date | string;
+		}
 	}
 }
 

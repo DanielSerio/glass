@@ -1,12 +1,17 @@
 <script lang="ts">
 	import { Page } from '$lib/components/layout';
 	import { Button } from '$lib/components/buttons';
+	import { Toasts } from '$lib/components/toasts';
+	import { useToasts } from '$lib/hooks';
+
+	const { addToastItem, items } = useToasts({});
 </script>
 
 <Page>
 	<h1>Layout</h1>
 	<Button href="#">Link Button</Button>
-	<Button color="primary">Regular Button</Button>
+	<Button color="primary" on:click={() => addToastItem({ message: 'default' })}>Add Toast</Button>
+	<Toasts items={$items} />
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur harum repellat sed quis
 		delectus impedit alias veniam cupiditate consectetur reprehenderit rem voluptate perspiciatis,

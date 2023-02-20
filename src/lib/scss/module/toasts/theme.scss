@@ -1,0 +1,15 @@
+@import "../../config/index.scss";
+
+.s-glass-layout-root.light .s-glass-toast-item-root {
+  .s-glass-toast-item-container {
+    color: rgba(0, 0, 0, 0.6);
+    background: white;
+  }
+}
+
+.s-glass-layout-root.dark .s-glass-toast-item-root {
+  .s-glass-toast-item-container {
+    color: rgba(255, 255, 255, 0.6);
+    background: $dark-shade;
+  }
+}
