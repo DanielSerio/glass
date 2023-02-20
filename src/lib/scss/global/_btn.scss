@@ -1,0 +1,50 @@
+.s-glass-layout-root {
+  a.btn {
+    text-decoration: none;
+  }
+
+  button.btn {
+    appearance: none;
+  }
+
+  .btn {
+    display: flex;
+    width: fit-content;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid transparent;
+
+    .s-glass-btn-container {
+      display: flex;
+      align-items: center;
+    }
+
+    @each $name, $map in $button-sizes {
+      &.#{$name} {
+        padding: 0 map-get($map, padding);
+        border-radius: map-get($map, border-radius);
+        font-size: 0 map-get($map, font-size);
+
+        .s-glass-btn-container {
+          min-height: map-get($map, min-height);
+        }
+      }
+    }
+  }
+
+  a.btn,
+  .btn:not(:disabled) {
+    cursor: pointer;
+    @each $name, $color in $ui-color {
+      &.#{$name + ""} {
+        background: $color;
+        color: white;
+
+        &:hover {
+          background: darken($color, 12%);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

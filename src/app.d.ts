@@ -2,10 +2,18 @@
 // for information about these interfaces
 declare global {
 	namespace App {
-		// interface Error {}
-		// interface Locals {}
-		// interface PageData {}
-		// interface Platform {}
+		type SizeName = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+		type UIColorName =
+			| 'primary'
+			| 'success'
+			| 'warning'
+			| 'danger'
+			| 'info'
+			| 'default'
+			| 'teal'
+			| 'green'
+			| 'yellow'
+			| 'orange';
 	}
 }
 

@@ -1,10 +1,12 @@
 <script lang="ts">
 	import { Page } from '$lib/components/layout';
+	import { Button } from '$lib/components/buttons';
 </script>
 
 <Page>
 	<h1>Layout</h1>
-	<a href="#">Some Link</a>
+	<Button href="#">Link Button</Button>
+	<Button color="primary">Regular Button</Button>
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur harum repellat sed quis
 		delectus impedit alias veniam cupiditate consectetur reprehenderit rem voluptate perspiciatis,

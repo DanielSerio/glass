@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Classes, MinimizableSize } from '$lib/types/ui';
 	import { classNames } from '$lib/utilities/class-names';
+	import '../../scss/global/index.scss';
 	import '../../scss/module/layout/layout.scss';
 	import '../../scss/module/layout/theme.scss';
 
