@@ -1,0 +1,33 @@
+$light-shade: #f4f7f5;
+$dark-shade: #171117;
+
+$brand: #8b09d1;
+
+$light-accent: #8889a9;
+$dark-accent: #b34059;
+
+$default: #999999;
+$info: #231725;
+
+$primary: #991fd4;
+$success: #638478;
+$warning: #e07440;
+$danger: #f44336;
+
+$orange: #e35a30;
+$yellow: #ddb053;
+$green: #8ead67;
+$teal: #4db3b2;
+
+$ui-color: (
+  primary: $primary,
+  success: $success,
+  warning: $warning,
+  danger: $danger,
+  info: $info,
+  default: $default,
+  teal: $teal,
+  green: $green,
+  yellow: $yellow,
+  orange: $orange,
+);

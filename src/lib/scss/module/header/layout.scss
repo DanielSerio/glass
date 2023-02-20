@@ -1,0 +1,11 @@
+.s-glass-header-root {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  z-index: 4000;
+}
+@import "./theme.scss";

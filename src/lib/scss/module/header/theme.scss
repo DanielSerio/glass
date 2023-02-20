@@ -1,0 +1,9 @@
+@import "../../../scss/config/index.scss";
+
+.dark .s-glass-header-root {
+  background: $dark-shade;
+}
+
+.light .s-glass-header-root {
+  background: $light-shade;
+}

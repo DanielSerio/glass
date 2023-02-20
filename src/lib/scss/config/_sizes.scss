@@ -1,0 +1,36 @@
+$html-font-size: 100%;
+$body-font-size: 1rem;
+$body-line-height: 1.46;
+
+$button-sizes: (
+  xs: (
+    padding: 2px,
+    font-size: 0.62rem,
+    border-radius: 2px,
+    min-height: 0.8rem,
+  ),
+  sm: (
+    padding: 3px,
+    font-size: 0.8rem,
+    border-radius: 3px,
+    min-height: 1.25rem,
+  ),
+  md: (
+    padding: 6px,
+    font-size: 1rem,
+    border-radius: 3px,
+    min-height: 1.7rem,
+  ),
+  lg: (
+    padding: 10px,
+    font-size: 1.25rem,
+    border-radius: 4px,
+    min-height: 2.15rem,
+  ),
+  xl: (
+    padding: 14px,
+    font-size: 1.75rem,
+    border-radius: 6px,
+    min-height: 2.7rem,
+  ),
+);

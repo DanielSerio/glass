@@ -1,0 +1,19 @@
+.s-glass-layout-root {
+  position: relative;
+  min-height: 100vh;
+
+  &,
+  & > .s-glass-content {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .s-glass-content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: space-between;
+    transition: all 160ms ease-out;
+  }
+}
