@@ -20,7 +20,9 @@
 		let:closeMenu
 	>
 		<SideNav {headerHeight} {width} {isOpen} {headerPosition}>
-			<button on:click={!isOpen ? openMenu : closeMenu}>menu</button>
+			<button class="menu-btn" on:click={!isOpen ? openMenu : closeMenu}>
+				<i class="bi bi-list" />
+			</button>
 		</SideNav>
 	</svelte:fragment>
 	<slot />

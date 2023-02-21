@@ -1,7 +1,6 @@
 .s-glass-sidenav-root {
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 0;
 
   .s-glass-sidenav-nav {
     transition: all 160ms ease-out;

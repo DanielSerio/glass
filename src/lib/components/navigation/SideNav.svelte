@@ -8,9 +8,12 @@
 	export let headerPosition: 'absolute' | 'fixed';
 </script>
 
-<aside class="s-glass-sidenav-root" style={`height:calc(100% - ${headerHeight}px);`}>
+<aside
+	class="s-glass-sidenav-root"
+	style={`height:calc(100% - ${headerHeight}px);top:${headerHeight}px;`}
+>
 	<nav
-		class="s-glass-sidenav-nav"
+		class="s-glass-sidenav-nav {isOpen ? 'open' : ''}"
 		style={`width:${isOpen ? width.max : width.min}px;top:${
 			headerPosition === 'fixed' ? headerHeight : 0
 		}px;`}

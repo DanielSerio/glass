@@ -11,19 +11,19 @@
     display: flex;
     width: fit-content;
     font-family: inherit;
-    font-size: inherit;
     border: 1px solid transparent;
 
     .s-glass-btn-container {
       display: flex;
       align-items: center;
+      font-size: inherit;
     }
 
     @each $name, $map in $button-sizes {
       &.#{$name} {
         padding: 0 map-get($map, padding);
         border-radius: map-get($map, border-radius);
-        font-size: 0 map-get($map, font-size);
+        font-size: map-get($map, font-size);
 
         .s-glass-btn-container {
           min-height: map-get($map, min-height);
