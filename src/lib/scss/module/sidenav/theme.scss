@@ -1,0 +1,8 @@
+@import "../../config/index.scss";
+
+.light a.s-glass-sidenav-root-link-root {
+  &.active {
+    background: $primary;
+    color: white;
+  }
+}

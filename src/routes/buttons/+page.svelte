@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { Button } from '$lib/components/buttons';
 	import { Page } from '$lib/components/layout';
+	import { Table } from '$lib/components/tables';
+	import TableCell from '$lib/components/tables/TableCell.svelte';
 	const sizes: App.SizeName[] = ['xs', 'sm', 'md', 'lg', 'xl'];
 	const colors: App.UIColorName[] = [
 		'default',
@@ -50,12 +52,22 @@
 				{/each}
 			</div>
 			<h4 class="section-title">Classes</h4>
-			<div class="class-table">
-				<code>root</code>
-				<p>root container</p>
-				<code>container</code>
-				<p>inner container</p>
-			</div>
+			<Table>
+				<svelte:fragment slot="thead">
+					<tr>
+						<TableCell tag="th">Class name</TableCell>
+						<TableCell tag="th">Element description</TableCell>
+					</tr>
+				</svelte:fragment>
+				<tr>
+					<TableCell><code>root</code></TableCell>
+					<TableCell><p>root container</p></TableCell>
+				</tr>
+				<tr>
+					<TableCell><code>container</code></TableCell>
+					<TableCell><p>inner container</p></TableCell>
+				</tr>
+			</Table>
 		</section>
 	</article>
 </Page>

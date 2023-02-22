@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { MinimizableSize } from '$lib/types/ui';
 	import '../../scss/module/sidenav/layout.scss';
+	import '../../scss/module/sidenav/theme.scss';
 
 	export let isOpen: boolean;
 	export let width: MinimizableSize;

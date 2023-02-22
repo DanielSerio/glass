@@ -4,7 +4,6 @@
 
   .s-glass-sidenav-nav {
     transition: all 160ms ease-out;
-    border: 3px solid transparent;
     position: sticky;
     top: 0;
     display: flex;
@@ -12,5 +11,58 @@
     overflow-x: hidden;
     overflow-y: auto;
     min-height: 300px;
+  }
+}
+
+.s-glass-layout-root .s-glass-sidenav-root-link-root {
+  position: relative;
+  padding: 2px 0 2px 4px;
+
+  &,
+  .icon,
+  .text {
+    transition: all 160ms ease;
+  }
+
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+
+  &,
+  & > .s-glass-sidenav-root-link-container {
+    display: flex;
+  }
+
+  & > .s-glass-sidenav-root-link-container {
+    flex: 1;
+  }
+
+  &:not(.open) {
+    .text {
+      width: 0;
+      overflow-x: hidden;
+      padding: 0;
+    }
+    .icon {
+      width: 32px;
+    }
+  }
+
+  .icon,
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.open {
+    .icon {
+      width: 34px;
+    }
+    .text {
+      flex: 1;
+      max-width: 300px;
+    }
   }
 }

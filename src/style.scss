@@ -85,12 +85,20 @@ article {
 .s-glass-sidenav-nav {
   background: transparent;
   height: 100%;
-  border: none;
-  border-right: 1px solid;
+  border-width: 0 1px 0 0;
+  border-style: solid;
 
   .menu-btn {
     margin-right: 3px;
     margin-top: 3px;
+  }
+
+  .sidenav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 

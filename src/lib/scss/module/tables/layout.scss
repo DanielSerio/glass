@@ -1,0 +1,17 @@
+.s-glass-table-root {
+  overflow: hidden;
+  border-radius: 3px;
+
+  &,
+  .s-glass-table-container {
+    position: relative;
+  }
+
+  .s-glass-table-section {
+    display: grid;
+  }
+
+  .s-glass-table {
+    width: 100%;
+  }
+}
